@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bienvenid@
+{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content">
+    <div class="left">
+        <h1>Soy Germán Astudillo,</h1>
+        <h1>un desarrollador.</h1>
+        <p>Construyo páginas y aplicaciones web dinámicas en diferentes lenguajes como Python, Java, Javascript y utilizando bases de datos relacionales y no relaciones.</p>
+        <a href="#contacto" class="btn">Contáctame</a>
+    </div>
+    <div class="right">
+        <img src="{{ url_for('static', filename='developer.png') }}" alt="big-data" width="600px">
+    </div>
+    </div>
+</div>
+
+{% include 'portfolio/about.html' %}
+{% include 'portfolio/proyectos.html' %}
+{% include 'portfolio/contacto.html' %}
+
+{% endblock %}
