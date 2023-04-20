@@ -6,7 +6,7 @@
                 <p>Daré mi mejor esfuerzo! para aprender, aportar valor y que tengamos una prospera relación a largo plazo</p>
             </div>
             <div id="contacto" class="right padded">
-                <form class="contact-form" action="{{ url_for('portfolio.mail') }}" method="POST">
+                <form class="contact-form" action="{{ url_for('mail') }}" method="POST">
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                     <input type="email" name="email" id="email" placeholder="Correo" required>
                     <textarea name="mensaje" id="mensaje" required minlength=10></textarea>
